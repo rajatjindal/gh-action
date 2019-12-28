@@ -9,4 +9,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1 
       - name: Check Github Action Runs
-        uses: rajatjindal/gh-actions-test@v1
+        uses: rajatjindal/gh-actions-test@v2
