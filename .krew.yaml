@@ -1,10 +1,10 @@
 apiVersion: krew.googlecontainertools.github.com/v1alpha2
 kind: Plugin
 metadata:
-  name: whoami
+  name: gh-action
 spec:
   version: {{ .TagName }}
-  homepage: https://github.com/rajatjindal/kubectl-whoami
+  homepage: https://github.com/rajatjindal/gh-action
   platforms:
   - selector:
       matchLabels:
@@ -14,7 +14,7 @@ spec:
     files:
     - from: "*"
       to: "."
-    bin: kubectl-whoami
+    bin: kubectl-gh-action
   - selector:
       matchLabels:
         os: linux
@@ -23,7 +23,7 @@ spec:
     files:
     - from: "*"
       to: "."
-    bin: kubectl-whoami
+    bin: kubectl-gh-action
   shortDescription: Show the subject that's currently authenticated as.
   caveats: |
     This plugin has only been tested with RBAC token, ServiceAccount token, and BasicAuth. 
