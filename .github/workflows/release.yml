@@ -24,3 +24,6 @@ jobs:
       uses: rajatjindal/gh-actions-test@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        printenv
+      
