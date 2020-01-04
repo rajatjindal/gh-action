@@ -24,6 +24,6 @@ jobs:
       uses: rajatjindal/gh-actions-test@v4
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        KREW_RELEASE_BOT_WEBHOOK_URL: "https://krew-release-bot-test.rajatjindal.com/github-action-webhook
+        KREW_RELEASE_BOT_WEBHOOK_URL: "https://krew-release-bot-test.rajatjindal.com/github-action-webhook"
 
       
