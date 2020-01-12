@@ -25,3 +25,5 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         KREW_RELEASE_BOT_WEBHOOK_URL: https://krew-release-bot-3gfdrquxea-uc.a.run.app/github-action-webhook
+      with:
+        krew_template_file: ".krew.yaml"
