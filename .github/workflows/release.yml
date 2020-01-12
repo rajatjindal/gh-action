@@ -21,7 +21,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Check Github Action Runs
-      uses: rajatjindal/gh-actions-test@v5
+      uses: rajatjindal/gh-actions-test@v6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         KREW_RELEASE_BOT_WEBHOOK_URL: https://krew-release-bot-3gfdrquxea-uc.a.run.app/github-action-webhook
