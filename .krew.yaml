@@ -9,7 +9,7 @@ spec:
   - selector:
       matchLabels:
         os: darwin
-        arch: amd64
+         ar ch: amd64
     {{addURIAndSha "https://github.com/rajatjindal/gh-action/archive/{{ .TagName }}.tar.gz" .TagName }}
     files:
     - from: "*"
