@@ -10,7 +10,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
     - name: Check Github Action Runs
-      uses: rajatjindal/gh-actions-test@v8
+      uses: rajatjindal/gh-actions-test@v9
       env:
         KREW_RELEASE_BOT_WEBHOOK_URL: "https://krew-release-bot-dryrun.rajatjindal.com/github-action-webhook"
 
