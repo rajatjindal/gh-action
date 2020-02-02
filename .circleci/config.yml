@@ -6,14 +6,13 @@ jobs:
       - image: circleci/golang:1.13
         environment:
           KREW_RELEASE_BOT_WEBHOOK_URL: https://krew-release-bot-dryrun.rajatjindal.com/github-action-webhook
-          KREW_RELEASE_BOT_VERSION: v0.0.34-5
+          KREW_RELEASE_BOT_VERSION: v0.0.34
     steps:
       - checkout
       - run: |
           echo "using krew-release-bot version ${KREW_RELEASE_BOT_VERSION}"
           curl -LO https://github.com/rajatjindal/krew-release-bot/releases/download/${KREW_RELEASE_BOT_VERSION}/krew-release-bot_${KREW_RELEASE_BOT_VERSION}_linux_amd64.tar.gz
           tar -xvf krew-release-bot_${KREW_RELEASE_BOT_VERSION}_linux_amd64.tar.gz
-      - run: printenv && pwd && ls -ltr
       - run: ./krew-release-bot action
 
 
@@ -26,4 +25,4 @@ workflows:
             branches:
               ignore: /.*/
             tags:
-              only: /[0-9]+(\.[0-9]+)*(-.*)*/
+              only: /v[0-9]+(\.[0-9]+)*(-.*)*/
