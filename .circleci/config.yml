@@ -6,7 +6,7 @@ jobs:
       - image: circleci/golang:1.13
         environment:
           KREW_RELEASE_BOT_WEBHOOK_URL: https://krew-release-bot-dryrun.rajatjindal.com/github-action-webhook
-          KREW_RELEASE_BOT_VERSION: v0.0.34-4
+          KREW_RELEASE_BOT_VERSION: v0.0.34-5
     steps:
       - checkout
       - run: |
