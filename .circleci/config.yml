@@ -2,6 +2,7 @@ version: 2
 
 jobs:
   update-krew-index:
+    working_directory: /go/src/github.com/rajatjindal/gh-action
     docker:
       - image: circleci/golang:1.13
         environment:
