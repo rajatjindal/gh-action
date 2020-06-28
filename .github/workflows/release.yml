@@ -11,7 +11,5 @@ jobs:
       uses: actions/checkout@master
     - name: Check Github Action Runs
       uses: rajatjindal/gh-actions-test@v11
-      env:
-        KREW_RELEASE_BOT_WEBHOOK_URL: "https://angry-borg-f9dd47.netlify.app/github-action-webhook"
 
       
