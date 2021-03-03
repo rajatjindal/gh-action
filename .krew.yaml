@@ -4,7 +4,7 @@ metadata:
   name: whoami
 spec:
   version: {{ .TagName }}
-  homepage: https://github.com/rajatjindal/gh-action
+  homepage: https://rajatjindal.com
   platforms:
   - selector:
       matchLabels:
